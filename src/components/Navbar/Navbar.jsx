@@ -142,7 +142,9 @@ const Navbar = () => {
                       className={styles.navbar__left__item__dropdown}
                     >
                       {item?.submenuItems?.map((submenuItem, subIndex) => {
-                        return (
+                        return item === "$HGPT" ||
+                          item === "Learn" ||
+                          item === "Community" ? (
                           <Link
                             className={
                               styles.navbar__left__item__dropdown__item__link
@@ -158,6 +160,24 @@ const Navbar = () => {
                               {submenuItem.name}
                             </span>
                           </Link>
+                        ) : (
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href={submenuItem.path}
+                            className={
+                              styles.navbar__left__item__dropdown__item__link
+                            }
+                            key={subIndex} // Add a unique key for each submenu item
+                          >
+                            <span
+                              className={
+                                styles.navbar__left__item__dropdown__item
+                              }
+                            >
+                              {submenuItem.name}
+                            </span>
+                          </a>
                         );
                       })}
                     </div>
