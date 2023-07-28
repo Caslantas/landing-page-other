@@ -7,5 +7,5 @@ export const auditTop = {
 export const auditMid = {
   title: "Audit by",
   tokenAddressFirt: "0x529c79f6918665ebe250f32eeeaa1d410a0798c6",
-  tokenAddressSecond: "0xef6644499e8a3Db4938b3cff695c73995F9144c3",
+  tokenAddressSecond: "0x3BCEf46f40d1d7718Fd6108294766C986E1854B1",
 };

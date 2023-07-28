@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { heroLeft } from "../../../utils//constants/index";
 import Button from "../../../components/Button/Button";
-import { Microsoft, Binance } from "../../../assets";
+import { Microsoft, Binances } from "../../../assets";
 import HeaderVideo from "../../../assets/videos/Header.mp4";
 
 const Hero = () => {
@@ -15,7 +15,9 @@ const Hero = () => {
       setChangeRoot(false);
     }
   }, [window.location.pathname]);
-
+  const handleReadDocsClick = () => {
+    window.open("https://docs.hypergpt.ai/hypergpt/", "_blank")
+  };
   return (
     <div className={styles.hero}>
       {isHome && (
@@ -46,12 +48,15 @@ const Hero = () => {
           <h1>{heroLeft.topTextThird}</h1>
         </div>
         <div className={styles.hero__left__btns}>
-          <Button title="Launch App" size="large" isGradient={true} />
+          <Button title="Launch App" size="large" isGradient={true} onClick={()=>{
+            window.open('/hyperstore')
+          }} />
           <Button
             className={styles.hero__left__btns_items}
             title="Read Docs"
             size="large"
             isGradient={false}
+            onClick={handleReadDocsClick}
           />
         </div>
         <div className={styles.hero__left__bottomText}>
@@ -62,7 +67,7 @@ const Hero = () => {
           <p>Backed by</p>
           <div className={styles.hero__left__backedBy__logos}>
             <img src={Microsoft} alt="" />
-            <img src={Binance} alt="" />
+            <img src={Binances} alt="" />
           </div>
         </div>
       </div>

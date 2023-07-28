@@ -84,6 +84,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+
       @include respond-to(tablet-p) {
         img {
           width: 200px !important;
@@ -95,6 +96,7 @@
         }
         display: flex;
         gap: 2rem;
+        width: 250px;
       }
     }
   }

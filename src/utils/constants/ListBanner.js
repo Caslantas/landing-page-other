@@ -4,5 +4,6 @@ export const ListBanner = {
     "If you think you have a unique AI product, take your place in the",
   descSecond: "world's first and only AI solutions marketplace!",
   buttonFirst: "Apply Now",
-  buttonSecond: "Learn More",
+  buttonSecond: "Launch App",
+
 };

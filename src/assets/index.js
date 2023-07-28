@@ -8,7 +8,7 @@ import RightArrow from "./images/icons/RightArrow.svg";
 import WalletButton from "./images/icons/WalletButton.svg";
 import BinanceIcon from "./images/icons/Binance.svg";
 import Copy from "./images/icons/Copy.svg";
-import Binance from "./images/logos/Binance.svg";
+import Binances from "./images/logos/Binances.svg";
 import Eth from "./images/logos/eth.svg";
 import Microsoft from "./images/logos/Microsoft.svg";
 import Robot from "./images/Robot.svg";
@@ -57,7 +57,7 @@ export {
   Twitter,
   Discord,
   Telegram,
-  Binance,
+  Binances,
   Microsoft,
   Robot,
   DaoPeople,

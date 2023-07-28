@@ -4,7 +4,7 @@ import {
   leftCard,
   rightCardFirst,
   rightCardSecond,
-  rightCardThird,
+  // rightCardThird,
 } from "../../../utils/constants/index";
 
 const Cards = () => {
@@ -38,9 +38,9 @@ const Cards = () => {
           <div className={styles.cards__card__item__title}>
             {leftCard.title}
           </div>
-          <div className={styles.cards__card__item__img}>
+          {/* <div className={styles.cards__card__item__img}>
             <img src={rightCardThird.img} alt="" />
-          </div>
+          </div> */}
           <div className={styles.cards__card__item__content}>
             <div className={`${styles.cards__card__item__content__text}`}>
               <span>{leftCard.contentText.first}</span>
@@ -48,9 +48,11 @@ const Cards = () => {
               <span>{leftCard.contentText.third}</span>
             </div>
           </div>
-          <a
+          <a 
             className={`${styles.cards__card__item__content__link}`}
             href={leftCard.link}
+            target="_blank" rel="noreferrer"
+            
           >
             {leftCard.buttonText}
           </a>
@@ -71,7 +73,7 @@ const Cards = () => {
               {rightCardFirst.title}
             </div>
             <div className={styles.cards__card__item__img}>
-              <img src={rightCardThird.img} alt="" />
+              {/* <img src={rightCardThird.img} alt="" /> */}
             </div>
             <div className={styles.cards__card__item__content}>
               <div className={`${styles.cards__card__item__content__text}`}>
@@ -81,6 +83,7 @@ const Cards = () => {
               <a
                 className={`${styles.cards__card__item__content__link} ${styles.soon}`}
                 href={rightCardFirst.link}
+                target="_blank" rel="noreferrer"
               >
                 <span>{rightCardFirst.buttonText}</span>
               </a>
@@ -99,7 +102,7 @@ const Cards = () => {
               {rightCardSecond.title}
             </div>
             <div className={styles.cards__card__item__img}>
-              <img src={rightCardThird.img} alt="" />
+              {/* <img src={rightCardThird.img} alt="" /> */}
             </div>
             <div className={styles.cards__card__item__content}>
               <div className={`${styles.cards__card__item__content__text}`}>
@@ -110,18 +113,19 @@ const Cards = () => {
               <a
                 className={`${styles.cards__card__item__content__link} ${styles.soon}`}
                 href={rightCardSecond.link}
+                target="_blank" rel="noreferrer"
               >
                 <span>{rightCardFirst.buttonText}</span>
               </a>
             </div>
           </div>
-          <div
+          {/* <div
             id={styles.box}
             onMouseEnter={() => handleMouseEnter(3)}
             onMouseLeave={() => handleMouseLeave(3)}
             className={`${styles.cards__card__item} ${styles.cards__card__item__second} ${styles.cards__card__item__hover}`}
-          >
-            <div className={styles.cards__card__item__title}>
+          > */}
+            {/* <div className={styles.cards__card__item__title}>
               {rightCardThird.title}
             </div>
             <div className={styles.cards__card__item__img}>
@@ -139,8 +143,8 @@ const Cards = () => {
               >
                 <span>{rightCardFirst.buttonText}</span>
               </a>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ export const leftCard = {
     third: "MARKETPLACE",
   },
   buttonText: "Launch App",
-  link: "https://hyperstore.ai/",
+  link: "/hyperstore",
 };
 
 export const rightCardFirst = {
@@ -18,7 +18,7 @@ export const rightCardFirst = {
     second: "SINGLE ACCOUNT",
   },
   buttonText: "Coming Soon",
-  link: "https://hyperstore.ai/",
+  link: "/hypersdk",
 };
 
 export const rightCardSecond = {
@@ -30,17 +30,17 @@ export const rightCardSecond = {
     third: "NFT creation",
   },
   buttonText: "Coming Soon",
-  link: "https://hyperstore.ai/",
+  link: "/hypernft",
 };
 
-export const rightCardThird = {
-  title: "HYPERBOOST",
-  img: "test",
-  contentText: {
-    first: "AI-BASED",
-    second: "ADVERTISEMENT",
-    third: "MODEL",
-  },
-  buttonText: "Coming Soon",
-  link: "https://hyperstore.ai/",
-};
+// export const rightCardThird = {
+//   title: "HYPERBOOST",
+//   img: "test",
+//   contentText: {
+//     first: "AI-BASED",
+//     second: "ADVERTISEMENT",
+//     third: "MODEL",
+//   },
+//   buttonText: "Coming Soon",
+//   link: "https://hyperstore.ai/",
+// };

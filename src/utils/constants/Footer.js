@@ -13,24 +13,25 @@ export const footerTop = {
 export const footerSocial = [
   {
     name: "Telegram",
-    link: "https://t.me/hypergpt",
+    link: "https://t.me/HyperGPTai",
+    icon: Telegram,
+  },
+  {
+    name: "Telegram",
+    link: " https://t.me/hypergpt_news ",
     icon: Telegram,
   },
   {
     name: "Discord",
-    link: "https://discord.gg/5QXw6zq",
+    link: "https://discord.com/invite/hypergpt ",
     icon: Discord,
   },
   {
     name: "Twitter",
-    link: "https://twitter.com/hypergpt",
+    link: "https://twitter.com/hypergpt ",
     icon: Twitter,
   },
-  {
-    name: "Youtube",
-    link: "https://www.youtube.com/channel/UC4QXjXUZ4QX6JZ4X6Y5Z3jQ",
-    icon: Youtube,
-  },
+
 ];
 
 export const footerBottomItems = [

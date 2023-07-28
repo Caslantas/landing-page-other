@@ -14,19 +14,31 @@ const Footer = () => {
   const [message, setMessage] = useState("");
   const [inquiry, setInquiry] = useState("");
 
-  const handleSubmit = useCallback((text) => {
-    setTimeout(() => {
+  const handleSubmit = useCallback(() => {
+    if (!name || !email || !inquiry || !message) {
       dispatch({
         type: "SET_NOTIFICATION",
-        payload: { message: "mesaj başarıyla gönderildi", type: "success" },
+        payload: {
+          message: "Lütfen tüm alanları doldurun.",
+          type: "error",
+        },
       });
-      setName("");
-      setEmail("");
-      setMessage("");
-      setInquiry("");
-    }, 1000);
-  }, []);
-
+    } else {
+      setTimeout(() => {
+        dispatch({
+          type: "SET_NOTIFICATION",
+          payload: {
+            message: "Mesaj başarıyla gönderildi",
+            type: "success",
+          },
+        });
+        setName("");
+        setEmail("");
+        setMessage("");
+        setInquiry("");
+      }, 1000);
+    }
+  }, [dispatch, name, email, inquiry, message]);
   return (
     <footer className={styles.footer}>
       <div id="contact" className={styles.footer_top}>
@@ -58,20 +70,20 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer_top__right}>
-          <div className={styles.footer_top__right__form}>
+          <div className={styles.footer_top__right__form }>
             <input
               type="text"
               placeholder="Name*"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Name*"
+              required
             />
             <input
               placeholder="Email*"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="Email*"
+              required 
             />
           </div>
           <input
@@ -79,6 +91,7 @@ const Footer = () => {
             onChange={(e) => setInquiry(e.target.value)}
             type="text"
             placeholder="Your inquiry about"
+            required 
           />
           <textarea
             value={message}
@@ -88,6 +101,7 @@ const Footer = () => {
             cols="30"
             rows="10"
             placeholder="Message..."
+            required 
           ></textarea>
           <Button
             onClick={handleSubmit}
@@ -96,6 +110,7 @@ const Footer = () => {
             style={{
               width: "fit-content",
             }}
+          
           />
         </div>
       </div>

@@ -25,17 +25,19 @@ const Audit = () => {
     {
       name: "Mexc",
       img: Mexc,
-      link: "https://www.mexc.com/exchange/HPGT_USDT",
+      link: "https://www.mexc.com/exchange/HGPT_USDT ",
     },
     {
       name: "Pancakeswap",
       img: Pancakeswap,
-      link: "https://www.bitmart.com/trade/en-US?symbol=HPGT_USDT&layout=pro",
+      link: "https://pancakeswap.finance/",
+      
     },
     {
       name: "Bitmart",
       img: Bitmart,
-      link: "https://pancakeswap.finance/swap?outputCurrency=0x529C79f6918665EBE250F32eeEAA1d410a0798C6",
+      link: "https://www.bitmart.com/trade/en-US?symbol=HGPT_USDT ",
+    
     },
   ];
 
@@ -49,7 +51,7 @@ const Audit = () => {
         </div>
         <div className={styles.audit_top__right}>
           <a
-            href="https://assetux.com/?action=buy&currency=usd&chain=56&token=HPGT"
+            href="https://assetux.com/?action=buy&currency=usd&chain=56&token=hgpt"
             target="_blank"
             rel="noreferrer"
           >

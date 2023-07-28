@@ -131,9 +131,11 @@ const PagesLayout = ({ data }) => {
               />
             </div>
           )}
-          {!isDao && (
+          {isDao === isNFT && isDao ===isSDK? (
             <div className={`${styles.pagesLayout_topContent__button}`}>
-              <Button title={"Launch App"} isGradient={true} />
+              <Button title={"Launch App"} isGradient={true} onClick={()=>{
+                window.open("/hyperstore")
+              }} />
               <div
                 className={styles.pagesLayout_topContent__button__watchVideo}
               >
@@ -141,7 +143,7 @@ const PagesLayout = ({ data }) => {
                 <span>Watch Video</span>
               </div>
             </div>
-          )}
+          ):''}
         </div>
         <div className={styles.pagesLayout_topContent__right}>
           {" "}

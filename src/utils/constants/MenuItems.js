@@ -8,22 +8,8 @@ export const menuItems = [
         name: "HyperStore",
         path: "/hyperstore",
       },
-      {
-        name: "HyperSDK (soon)",
-        path: "/hypersdk",
-      },
-      {
-        name: "HyperNFT (soon)",
-        path: "/hypernft",
-      },
-      {
-        name: "HyperBoost (soon)",
-        path: "#",
-      },
-      {
-        name: "DAO",
-        path: "/dao",
-      },
+      
+     
     ],
   },
   {
@@ -33,35 +19,94 @@ export const menuItems = [
     submenuItems: [
       {
         name: "Buy on MEXC",
-        path: "/",
+        path: "https://www.mexc.com/exchange/HGPT_USDT  ",
       },
       {
         name: "Buy on Bitmart",
-        path: "/",
+        path: "https://www.bitmart.com/trade/en-US?symbol=HGPT_USDT ",
       },
       {
         name: "Buy on Pancakeswap",
-        path: "/",
+        path: "https://pancakeswap.finance/ ",
       },
       {
         name: "Stake $HGPT",
-        path: "/",
+        path: "https://staking.hypergpt.ai/",
       },
       {
         name: "Claim Now",
-        path: "/",
+        path: "https://claim.hypergpt.ai/",
       },
       {
         name: "Certik Audit Report",
-        path: "/",
+        path: "https://skynet.certik.com/projects/hypergpt",
       },
       {
         name: "Coinmarketcap",
-        path: "/",
+        path: "https://coinmarketcap.com/currencies/hypergpt/ ",
       },
       {
         name: "CoinGecko",
-        path: "/",
+        path: "https://www.coingecko.com/en/coins/hypergpt ",
+      },
+    ],
+  },
+  {
+    name: "HyperDAO",
+    path: "/",
+    isSubmenu: true,
+    submenuItems: [
+      {
+        name: "HyperSDK (soon)",
+        path: "/hypersdk",
+      },
+      {
+        name: "HyperNFT (soon)",
+        path: "/hypernft",
+      },
+     
+    ],
+  },
+  
+  {
+    name: "Community",
+    path: "/",
+    isSubmenu: true,
+    submenuItems: [
+      {
+        name: "Telegram Chat",
+        path: "https://t.me/HyperGPTai ",
+      },
+      {
+        name: "Telegram News",
+        path: "https://t.me/hypergpt_news ",
+      },
+      {
+        name: "Discord",
+        path: "https://discord.com/invite/hypergpt ",
+      },
+      {
+        name: "Twitter",
+        path: "https://twitter.com/hypergpt ",
+      },
+    
+      {
+        name: "LinkedIn",
+        path: "https://www.linkedin.com/company/hypergpt/ ",
+      },
+    
+      {
+          name: "Snapshot",
+          path: "https://snapshot.org/#/hypergptdao.eth ",
+        },
+      
+      {
+        name: "Guild",
+        path: "https://guild.xyz/hypergpt ",
+      },
+      {
+        name: "Zealy",
+        path: "https://zealy.io/c/hypergpt ",
       },
     ],
   },
@@ -72,58 +117,15 @@ export const menuItems = [
     submenuItems: [
       {
         name: "Docs",
-        path: "/",
+        path: "https://docs.hypergpt.ai/hypergpt/  ",
       },
       {
         name: "News",
-        path: "/",
+        path: "https://medium.com/@hypergptai ",
       },
       {
         name: "Videos",
-        path: "/",
-      },
-    ],
-  },
-  {
-    name: "Community",
-    path: "/",
-    isSubmenu: true,
-    submenuItems: [
-      {
-        name: "Telegram Chat",
-        path: "/",
-      },
-      {
-        name: "Telegram News",
-        path: "/",
-      },
-      {
-        name: "Discord",
-        path: "/",
-      },
-      {
-        name: "Twitter",
-        path: "/",
-      },
-      {
-        name: "YouTube",
-        path: "/",
-      },
-      {
-        name: "LinkedIn",
-        path: "/",
-      },
-      {
-        name: "Medium",
-        path: "/",
-      },
-      {
-        name: "Zealy",
-        path: "/",
-      },
-      {
-        name: "Guild",
-        path: "/",
+        path: "https://www.youtube.com/@HyperGPT",
       },
     ],
   },

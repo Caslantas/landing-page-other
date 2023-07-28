@@ -20,6 +20,9 @@ const RobotBanner = () => {
         <Button
           className={styles.robotBanner_left__button}
           title={robotBanner.buttonText}
+          onClick={()=>{
+            window.open("/hyperstore")
+          }}
         />
       </div>
       <div className={styles.robotBanner_right}>

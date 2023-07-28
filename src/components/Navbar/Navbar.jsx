@@ -92,24 +92,25 @@ const Navbar = () => {
   const socialList = [
     {
       name: "Telegram",
-      link: "https://t.me/",
+      link: "https://t.me/HyperGPTai ",
+      icon: Telegram,
+    },
+    {
+      name: "Telegram",
+      link: "https://t.me/hypergpt_news  ",
       icon: Telegram,
     },
     {
       name: "Discord",
-      link: "https://discord.gg/",
+      link: "https://discord.com/invite/hypergpt ",
       icon: Discord,
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/",
+      link: "https://twitter.com/hypergpt ",
       icon: Twitter,
     },
-    {
-      name: "Youtube",
-      link: "https://www.youtube.com/",
-      icon: Youtube,
-    },
+    
   ];
 
   return (
@@ -204,9 +205,9 @@ const Navbar = () => {
           </span>
           <Button
             onClick={() =>
-              window.open("http://20.215.209.205:8080/marketplace", "_blank")
+              window.open("/hyperstore")
             }
-            title="Get Started"
+            title="Launch App"
             size="large"
             isGradient={true}
           />
@@ -279,7 +280,7 @@ const Navbar = () => {
                 );
               })}
 
-              <Button title="Get Started" size="large" isGradient={true} />
+              <Button title="Launch App" size="large" isGradient={true} />
               <span className={styles.navbar__right__icons}>
                 {socialList.map((item, index) => {
                   return (

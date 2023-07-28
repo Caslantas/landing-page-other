@@ -3,8 +3,16 @@ import styles from "./Ecosystem.module.scss";
 import { ecoTitle, ecoDesc, ecoCardItems } from "../../../utils/constants";
 import DaoPeople from "../../../assets/images/DaoPeople.svg";
 import { RightArrow } from "../../../assets/index";
+import { useLocation } from "react-router-dom";
 
 const Ecosystem = () => {
+  
+  const location = useLocation()
+  const handleDaoPageClick = () => {
+   if(location.pathname !=="/dao"){
+    window.open("/dao","_blank")
+   }
+  };
   return (
     <div className={styles.ecosystem}>
       <div className={styles.ecosystem__top}>
@@ -16,7 +24,7 @@ const Ecosystem = () => {
           </div>
         </div>
         <div className={styles.ecosystem__top__right}>
-          <button>+</button>
+          <button onClick={handleDaoPageClick}>+</button>
           <img src={DaoPeople} alt="" />
         </div>
       </div>
@@ -32,7 +40,9 @@ const Ecosystem = () => {
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </a>
-              <a className={styles.ecosystem__bottom__card__button} href="#">
+              <a className={styles.ecosystem__bottom__card__button} href={item.link}  target="_blank"
+                rel="noopener noreferrer"  >
+              
                 <span>{item.buttonText}</span>
                 <img src={RightArrow} alt="" />
               </a>

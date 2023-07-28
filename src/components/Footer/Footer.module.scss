@@ -71,6 +71,7 @@
       .footer_top__right__form {
         gap: 21px;
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
         @include respond-to(tablet-p) {
           flex-direction: column;
